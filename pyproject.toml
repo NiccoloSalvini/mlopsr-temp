@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "mlopsr-temp"
+version = "0.1.0"
+description = "template mlops in r + python"
+authors = ["Niccolò Salvini <niccolo.salvini27@gmail.com>"]
+license = "mit"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pandas = "^1.5.1"
+sagemaker-tidymodels = "^0.1.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,17 @@
+default:
+  aws:
+    aws_access_key: !expr Sys.getenv("AWS_ACCESS_KEY_ID")
+    aws_secret_access_key: !expr Sys.getenv("AWS_SECRET_ACCESS_KEY")
+  auth:
+    qpp_name:  !expr Sys.getenv("POLISHED_APP_NAME")
+    auth_key: !expr Sys.getenv("POLISHED_AUTH_KEY")
+
+
+prod:
+  aws:
+    aws_access_key: !expr Sys.getenv("AWS_ACCESS_KEY_ID")
+    aws_secret_access_key: !expr Sys.getenv("AWS_SECRET_ACCESS_KEY")
+  auth:
+    app_name: !expr Sys.getenv("POLISHED_APP_NAME")
+    auth_key: !expr Sys.getenv("POLISHED_AUTH_KEY")
+
